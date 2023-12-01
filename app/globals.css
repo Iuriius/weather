@@ -1,4 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Zen+Kaku+Gothic+Antique:wght@300;400;900&display=swap");
 
-/* font-family: 'Archivo Black', sans-serif;
-font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+body {
+  font-family: "Archivo Black", sans-serif;
+  /* font-family: "Zen Kaku Gothic Antique", sans-serif; */
+  background-color: aquamarine;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 100svh;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: blanchedalmond;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.flag {
+  height: 2rem;
+  width: auto;
+  margin: 1rem;
+}
+
+.map {
+  position: relative;
+}
+
+.region {
+  position: absolute;
+  fill: currentColor;
+}
+
+.region:hover {
+  fill: red;
+}

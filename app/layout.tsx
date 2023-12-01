@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import 'modern-normalize/modern-normalize.css';
 import './globals.css'
+import Header from "@/app/components/header"
+import Footer from "@/app/components/footer"
 
 
 export const metadata: Metadata = {
@@ -15,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="container vertical">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
