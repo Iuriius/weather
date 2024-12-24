@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+html body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100dvh;
+    width: 100dvw;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-image: url("../public/main.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.root {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: -webkit-fill-available;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+main {
+    margin: 0 auto;
+    flex-grow: 1;
+}
